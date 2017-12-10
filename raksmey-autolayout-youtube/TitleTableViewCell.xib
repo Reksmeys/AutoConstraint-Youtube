@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TilteCell" rowHeight="77" id="KGk-i7-Jjw" customClass="TitleTableViewCell" customModule="raksmey_autolayout_youtube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="슬픈 노래 (SAD SONG)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj7-ky-u4g">
+                        <rect key="frame" x="8" y="8" width="374" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4M Views" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="No9-YH-NyT">
+                        <rect key="frame" x="8" y="33" width="366" height="35.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="No9-YH-NyT" secondAttribute="bottom" id="IQm-CD-E1c"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="No9-YH-NyT" secondAttribute="trailing" constant="8" id="Njo-Kl-sL9"/>
+                    <constraint firstAttribute="trailing" secondItem="Mj7-ky-u4g" secondAttribute="trailing" constant="8" id="dHg-2m-ns2"/>
+                    <constraint firstItem="Mj7-ky-u4g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="n5r-Va-xcm"/>
+                    <constraint firstItem="No9-YH-NyT" firstAttribute="top" secondItem="Mj7-ky-u4g" secondAttribute="bottom" constant="8" id="oqc-BU-5Nk"/>
+                    <constraint firstItem="No9-YH-NyT" firstAttribute="leading" secondItem="Mj7-ky-u4g" secondAttribute="leading" id="peS-Gb-Pom"/>
+                    <constraint firstItem="Mj7-ky-u4g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="wXE-gK-CBt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="numberOfLike" destination="No9-YH-NyT" id="dJl-vi-jIo"/>
+                <outlet property="titleLabel" destination="Mj7-ky-u4g" id="MEO-If-oFm"/>
+            </connections>
+            <point key="canvasLocation" x="347" y="17.5"/>
+        </tableViewCell>
+    </objects>
+</document>

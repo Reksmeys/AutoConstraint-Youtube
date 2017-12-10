@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubscribeCell" rowHeight="72" id="KGk-i7-Jjw" customClass="SubscribeTableViewCell" customModule="raksmey_autolayout_youtube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="537" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="537" height="71.666666666666671"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube-image5" translatesAutoresizingMaskIntoConstraints="NO" id="GjW-qF-Czr">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BDt-Tb-zgu"/>
+                            <constraint firstAttribute="width" constant="50" id="UHr-WF-Auz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBSCRIBE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CP-sd-B7H">
+                        <rect key="frame" x="437.66666666666674" y="8" width="91.333333333333258" height="36.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="N6y-ks-9ph">
+                        <rect key="frame" x="66" y="6" width="363.66666666666669" height="38.333333333333336"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reksmey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-eL-fdD">
+                                <rect key="frame" x="0.0" y="0.0" width="363.66666666666669" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="5 Subscribers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tq-UD-Y2D">
+                                <rect key="frame" x="0.0" y="24" width="363.66666666666669" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8CP-sd-B7H" firstAttribute="leading" secondItem="N6y-ks-9ph" secondAttribute="trailing" constant="8" id="5tE-g0-QHp"/>
+                    <constraint firstAttribute="bottom" secondItem="8CP-sd-B7H" secondAttribute="bottom" constant="8" id="62T-1B-txP"/>
+                    <constraint firstAttribute="bottom" secondItem="N6y-ks-9ph" secondAttribute="bottom" constant="8" id="BPE-aG-ObO"/>
+                    <constraint firstItem="N6y-ks-9ph" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="DgO-FV-Cfz"/>
+                    <constraint firstItem="8CP-sd-B7H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JQ4-Gu-61h"/>
+                    <constraint firstItem="GjW-qF-Czr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="QgH-bF-SrD"/>
+                    <constraint firstItem="N6y-ks-9ph" firstAttribute="leading" secondItem="GjW-qF-Czr" secondAttribute="trailing" constant="8" id="VJo-9v-q04"/>
+                    <constraint firstItem="GjW-qF-Czr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VkY-hl-kVg"/>
+                    <constraint firstAttribute="bottom" secondItem="GjW-qF-Czr" secondAttribute="bottom" constant="8" id="eo5-Ec-Kve"/>
+                    <constraint firstAttribute="trailing" secondItem="8CP-sd-B7H" secondAttribute="trailing" constant="7.9999999999999432" id="lJ3-m2-MKZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="channelImageView" destination="GjW-qF-Czr" id="8za-KT-ofN"/>
+                <outlet property="channelTitleLabel" destination="7lP-eL-fdD" id="qhE-Tf-TrQ"/>
+            </connections>
+            <point key="canvasLocation" x="95.5" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="youtube-image5" width="336" height="188"/>
+    </resources>
+</document>
